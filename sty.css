@@ -1,0 +1,78 @@
+body{
+    background-image: url("img.jpg");
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.qwe{
+    opacity: .1;
+    height: 100vh;
+    background: url("rain.png");
+    animation: as 3s linear infinite;
+
+}
+
+.qwe::before{
+    content:'' ;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(thunder.png);
+    background-repeat: no-repeat;
+    animation:thu 3s linear infinite;
+    opacity: 0;
+
+}
+@keyframes thu{
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 1;
+    }
+    30%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes as
+{
+    0%
+    {
+        background-position: 0% 0%;
+    }
+
+    100%
+    {
+        background-position: 20% 100%;
+    }
+}
